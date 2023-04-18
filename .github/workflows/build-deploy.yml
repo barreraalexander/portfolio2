@@ -1,0 +1,13 @@
+name: Build and Deploy Code
+
+on:
+  push:
+    branches: ["development"]
+
+jobs:
+  build:
+    environment:
+      name: portfolio
+      runs-on: ubuntu-latest
+      # steps:
+      #   - name: pulling git repo
