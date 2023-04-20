@@ -2,3 +2,4 @@ flask
 pydantic
 python-dotenv
 pytest
+flask-cache
