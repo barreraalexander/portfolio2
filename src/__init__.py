@@ -10,11 +10,8 @@ def create_app():
 
     app.config['DEBUG'] = settings.debug
 
-    # cache = Cache(app)
-
     with app.app_context():
         cache.init_app(app)
-        # g.cache = cache
 
     @app.route('/healthcheck')
     def healthcheck():
@@ -24,8 +21,4 @@ def create_app():
     from src.blueprints.views.routes import bp as views_bp
     app.register_blueprint(views_bp)
 
-    # g.cache = cache
     return app
-
-def _before_request():
-    pass
