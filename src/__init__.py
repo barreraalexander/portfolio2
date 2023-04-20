@@ -4,7 +4,6 @@ from flask_caching import Cache
 
 cache = Cache()
 
-
 def create_app():
     app = Flask(__name__)
     app.config.from_object(settings)

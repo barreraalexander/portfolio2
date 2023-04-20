@@ -5,7 +5,8 @@ class Settings(BaseSettings):
     debug: bool = True
     port: int = 4000
 
-    CACHE_DEFAULT_TIMEOUT = 180
+    # CACHE_DEFAULT_TIMEOUT = 180
+    CACHE_DEFAULT_TIMEOUT = 0
     CACHE_TYPE: str = 'SimpleCache'
 
     # CACHE_TYPE = "RedisClusterCache"
