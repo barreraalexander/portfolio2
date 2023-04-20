@@ -2,4 +2,5 @@ flask
 pydantic
 python-dotenv
 pytest
-flask-cache
+Flask-Caching
+redis
