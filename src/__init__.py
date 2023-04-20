@@ -13,7 +13,6 @@ def create_app():
     # cache = Cache(app)
 
     with app.app_context():
-        pass
         cache.init_app(app)
         # g.cache = cache
 
