@@ -1,38 +1,18 @@
 {% extends '_base.html' %}
 
+{% from "components/sections/landing.html" import landing with context %}
+{% from "components/sections/upwork.html" import upwork with context %}
+{% from "components/sections/titleleap.html" import titleleap with context %}
+
 
 {% block content %}
 
+{{landing()}}
 
-<section id="landing_section">
-    <h1>
-        Settings
-    </h1>
-    <p>
-        {{default_settings}}
-    </p>
-    <p>
-        {{user_id}}
-    </p>
-    <button
-        class="color_mode_toggle"
-        data-action_url="{{url_for('cache_api.toggle_color_mode')}}"
-        data-dark_mode="{{default_settings.dark_mode}}"
-    >
-        dark
-    </button>
-</section>
+{{upwork()}}
 
-<section id="hidden_default_settings_ctnr">
-    {% for setting in default_settings %}
-        <br>
-        <p
-            class="default_settings"
-            data-setting_name="{{setting}}"
-        >
-            {{setting}}
-        </p>
-    {% endfor %}
-</section>
+{{titleleap()}}
+
+
 
 {% endblock %}

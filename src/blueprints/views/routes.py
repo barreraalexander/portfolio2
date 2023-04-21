@@ -6,16 +6,8 @@ from copy import deepcopy
 bp = Blueprint('views', __name__)
 
 @bp.route('/')
+# @cache.cached(timeout=300)
 def index():
-    default_settings = deepcopy(DEFAULT_SETTINGS)
-    requestor_ip = request.environ.get('HTTP_X_FORWARDED_FOR', request.remote_addr)
-
-    if cache.has(request.remote_addr):
-        user_settings = cache.get(requestor_ip)
-        default_settings.update(user_settings)
-    
-    # print ('ran')
     return render_template(
         'index.html',
-        default_settings=default_settings
     )
