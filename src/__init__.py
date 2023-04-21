@@ -1,8 +1,12 @@
-from flask import Flask, jsonify, g
-from src.config import settings
+from flask import Flask, jsonify
 from flask_caching import Cache
+from flask_assets import Environment
+
+from src.config import settings
+from src.utils.assets import bundles
 
 cache = Cache()
+assets = Environment()
 
 def create_app():
     app = Flask(__name__)
@@ -10,9 +14,14 @@ def create_app():
 
     app.config['DEBUG'] = settings.debug
 
+    # assets.init_app(app)
+
     with app.app_context():
+        assets.init_app(app)
         cache.init_app(app)
 
+    assets.register(bundles)
+    
     @app.route('/healthcheck')
     def healthcheck():
         status = {'status' : 'good'}

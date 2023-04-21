@@ -4,3 +4,4 @@ python-dotenv
 pytest
 Flask-Caching
 redis
+flask-assets
