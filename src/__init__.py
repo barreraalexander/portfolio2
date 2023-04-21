@@ -14,8 +14,6 @@ def create_app():
 
     app.config['DEBUG'] = settings.debug
 
-    # assets.init_app(app)
-
     with app.app_context():
         assets.init_app(app)
         cache.init_app(app)
