@@ -1,5 +1,6 @@
 .vscode
-/gen
+gen/
+
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
