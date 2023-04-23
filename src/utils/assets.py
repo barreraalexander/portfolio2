@@ -8,6 +8,7 @@ bundles = {
             'scss/*.scss',
             'scss/base/*.scss',
             'scss/components/sections/*.scss',
+            'scss/components/navbars/*.scss',
         ],
         output='gen/css/main.%(version)s.css'
     ),
