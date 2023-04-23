@@ -3,3 +3,118 @@
     height: 100vh;
 }
 
+#landing_section{
+    height: 85vh;
+    overflow: hidden;
+    position: relative;
+
+
+    .text_ctnr{
+        display: contents;
+    }
+
+    #night_ctnr{
+        position: relative;
+        z-index: 97;
+        opacity: .8;
+    }
+    
+    
+    #globe_canvas{
+        outline: none;
+        mix-blend-mode: exclusion;
+        width: 100%;
+        height: 100vh;
+    }
+    
+    
+    #mountain{
+        bottom: 0;
+        display: block;
+        // filter: saturate(60);
+        mix-blend-mode: luminosity;
+
+        position: absolute;
+        width: 100%;
+        z-index: 98;
+    }
+
+    .controls_ctnr{
+        display: none;
+        
+    }
+}
+
+
+
+@media only screen and (min-width: $tablet_bp){
+    #landing_section{
+        font-size: 1.6em;
+    }
+}
+
+@media only screen and (min-width: $desktop_bp){
+    #landing_section{
+        height: 85vh;
+        font-size: 2em;
+        .hero_ctnr{
+            // top: -5em;
+            justify-content: flex-end;
+            height: 85%;
+        }
+        #mountain{
+            bottom: -100px;
+        }
+        .controls_ctnr{
+            display: block;    
+            width: 8em;
+            // height: 8em;
+            margin-top: 2em;
+            background: #000;
+            border: 4px solid #222;
+            border-radius: .25em;
+            padding: 1em;
+            opacity: .6;
+            p{
+                text-align: center;
+                font-size: .8em;
+                user-select: none
+            }
+            .controls{
+                display: flex;
+                flex-flow: column;
+                align-items: center;
+                gap: 1em;
+                margin-top: 1em;
+                p{
+                    background-color: #222;
+                    padding: .5em;
+                    border-radius: 50%;
+
+                }
+            }
+            .control_set{
+                // display: flex;
+                display: none;
+                gap: .5em;
+
+            }
+
+            .control_button{
+                display: flex;
+                flex-flow: column;
+                align-items: center;
+                justify-content: center;
+                small{
+                    // @include lg_text;
+                    font-size: .4em;
+                }
+            }
+            .control_button:hover{
+                cursor: pointer;
+            }
+
+        }
+    }
+
+}

@@ -6,7 +6,7 @@ from copy import deepcopy
 bp = Blueprint('views', __name__)
 
 @bp.route('/')
-# @cache.cached(timeout=300)
+@cache.cached(timeout=0)
 def index():
     return render_template(
         'index.html',
