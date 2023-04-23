@@ -1,0 +1,27 @@
+html, body {
+  padding: 0;
+  margin: 0; }
+
+h1, h2, h3,
+h4, h5, h6,
+p, a, li,
+ul {
+  padding: 0;
+  margin: 0;
+  color: #fff; }
+
+#header_section {
+  height: 10vh;
+  background-color: #222; }
+
+#landing_section {
+  background-color: #000;
+  height: 100vh; }
+
+#titleleap_section {
+  background-color: #000;
+  height: 100vh; }
+
+#upwork_section {
+  background-color: #000;
+  height: 100vh; }
