@@ -1,0 +1,18 @@
+{% extends '_base.html' %}
+
+{% from "components/sections/landing.html" import landing with context %}
+{% from "components/sections/upwork.html" import upwork with context %}
+{% from "components/sections/titleleap.html" import titleleap with context %}
+
+
+{% block content %}
+
+{{landing()}}
+
+{{upwork()}}
+
+{{titleleap()}}
+
+
+
+{% endblock %}

@@ -1,0 +1,50 @@
+{% macro main_header() %}
+
+<section id="header_section">
+    <nav>
+        <a href="">
+            <div class="nav_link">
+                <img
+                    id="header_logo"
+                    src="{{url_for('static', filename='images/icons/logo.svg')}}"
+                    alt="Alexander Barrera Logo"
+                >
+            </div>
+        </a>
+        <div class="nav_link">
+            <div class="nav_links_ctnr">
+                <a href="/#landing_section">
+                    <div class="nav_link">
+                        <p>
+                            Landing
+                        </p>
+                    </div>
+                </a>
+                <a href="/#apis_section">
+                    <div class="nav_link">
+                        <p>
+                            APIs
+                        </p>
+                    </div>
+                </a>
+                <a href="/#titleleap_section">
+                    <div class="nav_link">
+                        <p>
+                            Titleleap
+                        </p>
+                    </div>
+                </a>   
+                <a href="/#upwork_section">
+                    <div class="nav_link">
+                        <p>
+                            Upwork
+                        </p>
+                    </div>
+                </a>   
+            </div>
+            </div>
+        </a>
+    </nav>
+</section>
+
+{% endmacro %}
