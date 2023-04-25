@@ -6,10 +6,13 @@ class Settings(BaseSettings):
     port: int = 4000
 
     # CACHE_DEFAULT_TIMEOUT = 180
-    CACHE_DEFAULT_TIMEOUT = 0
+    CACHE_DEFAULT_TIMEOUT: int = 0
     CACHE_TYPE: str = 'SimpleCache'
 
     # CACHE_TYPE = "RedisClusterCache"
     # CACHE_REDIS_CLUSTER = "titleleap-cache-redis-clustered.cmfdnq.clustercfg.use1.cache.amazonaws.com:6379"
+
+    class Config:
+        env_file = "./.env"    
 
 settings = Settings()
