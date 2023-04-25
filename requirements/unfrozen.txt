@@ -7,3 +7,4 @@ redis
 flask-assets
 libsass
 flask-bcrypt
+gunicorn
