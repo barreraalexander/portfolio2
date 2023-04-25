@@ -12,4 +12,4 @@ COPY .env.sample .env
 
 COPY . .
 
-CMD ["gunicorn", "--config", "gunicorn-cfg.py", "run:flask_app"]
+CMD ["gunicorn", "--config", "gunicorn-cfg.py", "run:app"]
