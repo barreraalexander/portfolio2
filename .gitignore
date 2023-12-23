@@ -3,6 +3,13 @@ gen/
 
 
 # Byte-compiled / optimized / DLL files
+website/static/gen/css/*.css
+website/static/gen/js/*.js
+outline
+*.pem
+progress.txt
+
+
 __pycache__/
 *.py[cod]
 *$py.class

@@ -1,4 +1,5 @@
 flask
+<<<<<<< HEAD
 pydantic
 python-dotenv
 pytest
@@ -8,3 +9,5 @@ flask-assets
 libsass
 flask-bcrypt
 gunicorn
+=======
+>>>>>>> production
