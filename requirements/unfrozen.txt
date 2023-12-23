@@ -1,1 +1,13 @@
 flask
+<<<<<<< HEAD
+pydantic
+python-dotenv
+pytest
+Flask-Caching
+redis
+flask-assets
+libsass
+flask-bcrypt
+gunicorn
+=======
+>>>>>>> production

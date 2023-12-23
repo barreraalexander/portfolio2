@@ -1,0 +1,23 @@
+#header_section{
+    background-color: #222;
+    #header_logo{
+        width: 3em;
+        filter: invert(1);
+    }
+    nav{
+        align-items: center;
+        display: flex;
+        justify-content: space-between;
+        padding: 1em;
+        box-shadow: 10px 10px 10px 10px #fff;
+    }
+    .nav_links_ctnr{
+        display: flex;
+        gap: 1em;
+    }
+    .nav_link{
+        p{
+            text-decoration: underline;
+        }
+    }
+}

@@ -1,3 +1,7 @@
+.vscode
+gen/
+
+
 # Byte-compiled / optimized / DLL files
 website/static/gen/css/*.css
 website/static/gen/js/*.js
@@ -110,6 +114,7 @@ celerybeat.pid
 
 # Environments
 .env
+.env.prod
 .venv
 env/
 venv/

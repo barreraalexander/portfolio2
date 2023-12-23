@@ -25,6 +25,29 @@ jobs:
           pytest -v -s
     
 
+<<<<<<< HEAD
+  # mergemain:
+  #   runs-on: ubuntu-latest
+  #   needs: [build]
+  #   environment:
+  #     name: mergemain
+  #   steps:
+  #     - name: pulling git repo
+  #       uses: actions/checkout@v2
+  #     - name: set up python v3
+  #       uses: actions/setup-python@v2
+  #       with:
+  #         python-version: "3.8"
+  #     - name: checkout to main
+  #       run: git checkout main 
+  #     - name: merged from development
+  #       run: git merge development
+  #     - name: push to remote
+  #       run: git push
+  #     - name: checkout to development
+  #       run: git checkout development
+      
+=======
   mergemain:
     runs-on: ubuntu-latest
     needs: [build]
@@ -41,4 +64,5 @@ jobs:
         run: git checkout main 
       - name: merged from development
         run: git merge development
+>>>>>>> production
       
